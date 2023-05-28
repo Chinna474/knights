@@ -1,2 +1,2 @@
 [webservers]
-localhost:8090 ansible_user=ec2-user
+localhost:8090
