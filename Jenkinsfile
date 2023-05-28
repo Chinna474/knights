@@ -11,7 +11,7 @@
 
  stage('Execute Ansible'){
   steps{   
-      ansiblePlaybook credentialsId: 'http://localhost:8080/', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'dhost.inv', playbook: 'apache.yml'
+     ansiblePlaybook installation: 'ansible', inventory: 'dhost.inv', limit: 'http://localhost:8080', playbook: 'apache.yml'
  }
     }
  }
