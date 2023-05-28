@@ -11,7 +11,7 @@
 
  stage('Execute Ansible'){
   steps{   
-      ansiblePlaybook credentialsId: 'jenk', installation: 'ansible', inventory: 'dosth.inv', playbook: 'apache.yml'
+      ansiblePlaybook credentialsId: 'jenk', installation: 'ansible', inventory: 'dhost.inv', playbook: 'apache.yml'
  }
     }
  }
